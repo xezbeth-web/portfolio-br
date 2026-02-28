@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benmar Ramirez | Portfolio</title>
+    <meta name="description" content="Front-end developer portfolio focused on modern UI, interactions, and performance." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+    <div class="grid-overlay" aria-hidden="true"></div>
+
+    <aside class="social-rail" aria-label="Social links">
+      <a href="https://github.com/xezbeth-web" target="_blank" rel="noreferrer">GH</a>
+      <a href="https://www.linkedin.com/in/the-benmar-ramirez/" target="_blank" rel="noreferrer">IN</a>
+      <a href="mailto:benmarramirez.main@gmail.com">@</a>
+    </aside>
+
+    <header class="topbar" id="top">
+      <div class="container topbar__inner">
+        <a class="brand" href="#home" aria-label="Homepage brand"><span class="brand-short">BR</span><span class="brand-hover">xezbeth-web</span></a>
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container reveal" id="home">
+        <div class="hero-guide" aria-hidden="true">
+        </div>
+
+        <!-- 3D floating scene objects -->
+        <div class="hero-float hero-float--a" aria-hidden="true">
+          <div class="float-cube">
+            <div class="face face--front"></div>
+            <div class="face face--back"></div>
+            <div class="face face--left"></div>
+            <div class="face face--right"></div>
+            <div class="face face--top"></div>
+            <div class="face face--bottom"></div>
+          </div>
+        </div>
+        <div class="hero-float hero-float--b" aria-hidden="true">
+          <div class="float-pyramid-b">
+            <div class="pyr-b pyr-b--1"></div>
+            <div class="pyr-b pyr-b--2"></div>
+            <div class="pyr-b pyr-b--3"></div>
+            <div class="pyr-b pyr-b--4"></div>
+          </div>
+        </div>
+        <div class="hero-float hero-float--c" aria-hidden="true">
+          <div class="float-cube-c">
+            <div class="face-c face-c--front"></div>
+            <div class="face-c face-c--back"></div>
+            <div class="face-c face-c--left"></div>
+            <div class="face-c face-c--right"></div>
+            <div class="face-c face-c--top"></div>
+            <div class="face-c face-c--bottom"></div>
+          </div>
+        </div>
+
+        <div class="hero-copy">
+          <p class="hero-kicker">OPEN FOR WORK - GRADUATING APRIL 2026 - DLSU CS</p>
+          <h1 class="hero-title">
+            <span>Hi, my name is</span>
+            <strong>Benmar Ramirez</strong>
+          </h1>
+          <div class="hero-lead-fixed">
+            <p class="hero-lead">
+              <span class="hero-lead__text">I design and develop</span>
+              <span class="hero-word-wrap">
+                <span id="hero-word" class="hero-word" data-words="interfaces,products,web apps,frontend systems,landing pages">interfaces</span>
+              </span>
+            </p>
+          </div>
+          <p class="hero-note">Let me show you...</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="#contact">Get in Touch</a>
+            <a
+              class="btn btn--accent"
+              href="https://drive.google.com/file/d/1z8f5QxfBWxM8MXsTk-YTbzr306cDwaOe/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              >Resume/CV</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="container section reveal" id="about">
+        <h2 class="section-title">About</h2>
+        <div class="code-panel card">
+          <div class="code-title">About /&gt;</div>
+          <div class="code-row"><span class="ln">01</span><span class="code">class <b>BenmarRamirez</b> {'{'}</span></div>
+          <div class="code-row"><span class="ln">02</span><span class="code">&nbsp;&nbsp;// I can, because I did.</span></div>
+          <div class="code-row"><span class="ln">03</span><span class="code">&nbsp;&nbsp;// My frontend skill stack keeps expanding with real project work.</span></div>
+          <div class="code-row"><span class="ln">04</span><span class="code">&nbsp;&nbsp;constructor() {'{'}</span></div>
+          <div class="code-row"><span class="ln">05</span><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;name = <em>'Benmar Sim Ramirez'</em></span></div>
+          <div class="code-row"><span class="ln">06</span><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;location = <em>'Manila, Philippines'</em></span></div>
+          <div class="code-row"><span class="ln">07</span><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;degree = <em>'BS Computer Science &mdash; Software Technology, DLSU 2026'</em></span></div>
+          <div class="code-row"><span class="ln">08</span><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;role = <em>'Front-End Developer'</em></span></div>
+          <div class="code-row"><span class="ln">09</span><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;phone = <em>'+63 908-868-2960'</em></span></div>
+          <div class="code-row"><span class="ln">10</span><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;email = <em>'benmarramirez.main@gmail.com'</em></span></div>
+          <div class="code-row"><span class="ln">11</span><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;linkedin = <em>'linkedin.com/in/the-benmar-ramirez'</em></span></div>
+          <div class="code-row"><span class="ln">12</span><span class="code">&nbsp;&nbsp;{'}'}</span></div>
+          <div class="code-row"><span class="ln">13</span><span class="code">&nbsp;&nbsp;focus() {'{'}</span></div>
+          <div class="code-row"><span class="ln">14</span><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;return [<em>'Scalable UI'</em>, <em>'Accessibility'</em>, <em>'Responsive Systems'</em>]</span></div>
+          <div class="code-row"><span class="ln">15</span><span class="code">&nbsp;&nbsp;{'}'}</span></div>
+        </div>
+      </section>
+
+      <section class="container section reveal" id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <article class="card">
+            <h3>Front-End Developer Intern &mdash; Scintillant Ventures Ltd. <span>Dec 2025 &ndash; Present &middot; Ontario, Canada</span></h3>
+            <ul class="exp-bullets">
+              <li>Developing an education technology web application using TypeScript and Angular, building structured and scalable front-end features for learning platforms.</li>
+              <li>Successfully implemented an interactive mind map system and integrated music notation software to enhance visual and interactive learning experiences.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Web Developer &mdash; iHD Philippines <span>Nov 2025 &ndash; Present &middot; Pasig, Philippines</span></h3>
+            <ul class="exp-bullets">
+              <li>Built a modern corporate website using React with TypeScript, ensuring type safety and maintainable component architecture.</li>
+              <li>Implemented responsive UI layouts using Tailwind CSS, improving development speed and visual consistency.</li>
+              <li>Managed source code with Git, applying branching and committing best practices in a collaborative environment.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>UAAP E-Sports Team Manager &mdash; De La Salle University <span>Jan 2025 &ndash; Present &middot; Manila, Philippines</span></h3>
+            <ul class="exp-bullets">
+              <li>Oversee compliance requirements, event registrations, and tournament documentation.</li>
+              <li>Manage communications between players, coaching staff, university sports offices, and external sponsors.</li>
+              <li>Act as primary point of contact for stakeholder correspondence and partnership discussions.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Transcriptionist &mdash; VIQ Solutions <span>Dec 2024 &ndash; Present &middot; Manila, Philippines</span></h3>
+            <ul class="exp-bullets">
+              <li>Produce high-accuracy transcripts with strong typing speed and attention to detail.</li>
+              <li>Edit and format transcripts to meet strict compliance and quality standards.</li>
+              <li>Work under tight turnaround times while maintaining consistency and clarity.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Full Stack Developer &mdash; Original Beef <span>Jan 2024 &ndash; Feb 2024 &middot; Manila, Philippines</span></h3>
+            <ul class="exp-bullets">
+              <li>Developed a responsive product website using HTML, CSS, and JavaScript with a focus on usability and clear information architecture.</li>
+              <li>Implemented reusable UI components and responsive layouts for cross-device compatibility.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Digital Asset Manager / Data Analyst &mdash; RJB.GG <span>Jun 2021 &ndash; Jul 2022 &middot; Manila, Philippines</span></h3>
+            <ul class="exp-bullets">
+              <li>Tracked and analyzed blockchain asset performance using structured Excel models to evaluate ROI and transaction efficiency across a 500+ member portfolio.</li>
+              <li>Researched crypto market movements and competitor organizations to inform investment and partnership strategies.</li>
+              <li>Sourced and organized sponsor and partner contact databases through social media intelligence and digital research methods.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>E-Sports Coach &amp; Analyst &mdash; Freelance <span>Sep 2023 &ndash; Aug 2025 &middot; Manila, Philippines</span></h3>
+            <ul class="exp-bullets">
+              <li>Provided coaching for League of Legends players and small collegiate/local teams.</li>
+              <li>Conducted detailed VOD reviews and gameplay breakdowns.</li>
+              <li>Created written analytical reports identifying macro-strategy errors and drafting improvements.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section reveal" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+
+          <article class="project-showcase">
+            <div class="project-card-tilt">
+              <div class="project-info">
+                <h3>IHD Philippines <a class="project-ext-link" href="https://ihd-mnl.com/" target="_blank" rel="noreferrer" aria-label="Visit live site">&#x2197;</a></h3>
+                <div class="project-tags"><span>React</span><span>TypeScript</span><span>Tailwind CSS</span><span>Git</span></div>
+                <div class="project-line"></div>
+                <div class="project-meta">
+                  <span class="project-num">01</span>
+                  <span class="project-arrow">→</span>
+                </div>
+              </div>
+              <div class="project-media-wrap">
+                <div class="project-media media-1" aria-label="project preview"></div>
+                <div class="project-desc"><p>Official company website of IHD Philippines, a leading technology consultant founded in Hong Kong.</p></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-showcase">
+            <div class="project-card-tilt">
+              <div class="project-info">
+                <h3>Saffron POS</h3>
+                <div class="project-tags"><span>Java</span><span>Spring Boot</span><span>MySQL</span><span>RESTful APIs</span></div>
+                <div class="project-line"></div>
+                <div class="project-meta">
+                  <span class="project-num">02</span>
+                  <span class="project-arrow">→</span>
+                </div>
+              </div>
+              <div class="project-media-wrap">
+                <div class="project-media media-2" aria-label="project preview"></div>
+                <div class="project-desc"><p>A point-of-sale system built for Saffron Middle Eastern restaurant in Sampaloc, Manila.</p></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-showcase">
+            <div class="project-card-tilt">
+              <div class="project-info">
+                <h3>Arrows Express <a class="project-ext-link" href="https://dlsu-shuttle.onrender.com/" target="_blank" rel="noreferrer" aria-label="Visit live site">&#x2197;</a></h3>
+                <div class="project-tags"><span>Java</span><span>Spring Boot</span><span>MySQL</span><span>HTML</span><span>CSS</span></div>
+                <div class="project-line"></div>
+                <div class="project-meta">
+                  <span class="project-num">03</span>
+                  <span class="project-arrow">→</span>
+                </div>
+              </div>
+              <div class="project-media-wrap">
+                <div class="project-media media-3" aria-label="project preview"></div>
+                <div class="project-desc"><p>Shuttle reservation system draft for De La Salle University Manila, enabling students to book seats in real time.</p></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-showcase">
+            <div class="project-card-tilt">
+              <div class="project-info">
+                <h3>Original Beef <a class="project-ext-link" href="https://theoriginalbeeftapaflakes.com/" target="_blank" rel="noreferrer" aria-label="Visit live site">&#x2197;</a></h3>
+                <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <div class="project-line"></div>
+                <div class="project-meta">
+                  <span class="project-num">04</span>
+                  <span class="project-arrow">→</span>
+                </div>
+              </div>
+              <div class="project-media-wrap">
+                <div class="project-media media-4" aria-label="project preview"></div>
+                <div class="project-desc"><p>Online store for premium beef products and reseller packages, built for The Original Beef Tapa Flakes.</p></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-showcase">
+            <div class="project-card-tilt">
+              <div class="project-info">
+                <h3>StockSmart</h3>
+                <div class="project-tags"><span>Java</span><span>Android SDK</span><span>SQLite</span><span>XML</span></div>
+                <div class="project-line"></div>
+                <div class="project-meta">
+                  <span class="project-num">05</span>
+                  <span class="project-arrow">→</span>
+                </div>
+              </div>
+              <div class="project-media-wrap">
+                <div class="project-media media-5" aria-label="project preview"></div>
+                <div class="project-desc"><p>A productivity app for businesses to monitor assets, track inventory, and view analytics — all in one dashboard.</p></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-showcase">
+            <div class="project-card-tilt">
+              <div class="project-info">
+                <h3>Classroom Studio</h3>
+                <div class="project-tags"><span>Angular</span><span>TypeScript</span><span>HTML</span><span>CSS</span></div>
+                <div class="project-line"></div>
+                <div class="project-meta">
+                  <span class="project-num">06</span>
+                  <span class="project-arrow">→</span>
+                </div>
+              </div>
+              <div class="project-media-wrap">
+                <div class="project-media media-6" aria-label="project preview"></div>
+                <div class="project-desc"><p>A web application that equips teachers with design tools to manage and automate lesson planning through interactive mind maps.</p></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-showcase">
+            <div class="project-card-tilt">
+              <div class="project-info">
+                <h3>AW2 Autoworks</h3>
+                <div class="project-tags"><span>WordPress</span><span>PHP</span><span>JavaScript</span><span>CSS</span></div>
+                <div class="project-line"></div>
+                <div class="project-meta">
+                  <span class="project-num">07</span>
+                  <span class="project-arrow">→</span>
+                </div>
+              </div>
+              <div class="project-media-wrap">
+                <div class="project-media media-7" aria-label="project preview"></div>
+                <div class="project-desc"><p>Local-based system with a database for PMS schedules and reservations, attendance logging, accounting, and inventory management.</p></div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="section reveal" id="skills">
+        <h2 class="section-title section-title--center container">Skills</h2>
+        <div class="marquee-full">
+          <div class="marquee__track">
+            <div class="marquee__group">
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android SDK" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter" /></span>
+            </div>
+            <div class="marquee__group" aria-hidden="true">
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android SDK" /></span>
+              <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter" /></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section reveal" id="contact">
+        <div class="card cta">
+          <p class="cta-kicker">Let's build your next frontend product</p>
+          <h2>Need a fast, polished, and user-first interface?</h2>
+          <p>I'm available for freelance and contract frontend work &mdash; landing pages, business websites, and web app UI implementation. Based in Manila, Philippines.</p>
+          <div class="cta-actions">
+            <a class="btn" href="mailto:benmarramirez.main@gmail.com">Email Me</a>
+            <a class="btn" href="https://github.com/xezbeth-web" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Built with HTML, CSS &amp; JavaScript &nbsp;·&nbsp; &copy; 2026 xezbeth-web</p>
+      </div>
+    </footer>
+
+    <button class="scroll-top" aria-label="Scroll to top">&#8593;</button>
+    <script src="script.js"></script>
+  </body>
+</html>
