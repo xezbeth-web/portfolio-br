@@ -756,6 +756,49 @@ body.cursor-project .cursor-ring {
 .media-5 { background-image: url("images/project-stocksmart.jpg"); }
 .media-6 { background-image: url("images/project-scintillant.jpg"); }
 .media-7 { background-image: url("images/project-aw2.jpg"); }
+.media-8 {
+  background-color: #0f1a3a;
+  background-image:
+    repeating-linear-gradient(
+      135deg,
+      rgba(255, 195, 0, 0.08) 0px,
+      rgba(255, 195, 0, 0.08) 10px,
+      transparent 10px,
+      transparent 20px
+    );
+  position: relative;
+}
+.media-8::after {
+  content: '⚙ Under Construction';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: rgba(255, 195, 0, 0.72);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* WIP badge on project title */
+.wip-badge {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: #f5a623;
+  background: rgba(245, 166, 35, 0.12);
+  border: 1px solid rgba(245, 166, 35, 0.35);
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
 
 /* project tech tags — clean white chips */
 .project-info .project-tags {
