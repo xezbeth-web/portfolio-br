@@ -206,7 +206,7 @@ if (window.matchMedia('(pointer: fine)').matches) {
 // Project description overlay — click card to reveal, click again or outside to dismiss
 document.querySelectorAll('.project-showcase').forEach(card => {
   card.addEventListener('click', e => {
-    if (e.target.closest('.project-ext-link')) return; // let links navigate normally
+    if (e.target.closest('.project-ext-link, .project-loom-link')) return; // let links navigate normally
     const isOpen = card.classList.contains('is-open');
     // close all first
     document.querySelectorAll('.project-showcase.is-open').forEach(c => c.classList.remove('is-open'));

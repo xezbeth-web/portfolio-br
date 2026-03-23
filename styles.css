@@ -654,6 +654,34 @@ body.cursor-project .cursor-ring {
   gap: 3rem 4rem;
 }
 
+.project-category + .project-category {
+  margin-top: 3.1rem;
+}
+
+.project-category-head {
+  margin-bottom: 1.4rem;
+}
+
+.project-category-head h3 {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  letter-spacing: -0.01em;
+  color: #17315f;
+}
+
+.project-category-head p {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  max-width: 68ch;
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.projects-grid--ai {
+  gap: 2.4rem 3rem;
+}
+
 .project-showcase {
   perspective: 900px;
   perspective-origin: 50% 50%;
@@ -783,6 +811,31 @@ body.cursor-project .cursor-ring {
   text-transform: uppercase;
 }
 
+.media-9,
+.media-10 {
+  background-color: #0c1938;
+  background-image:
+    radial-gradient(circle at 14% 18%, rgba(63, 138, 255, 0.28), transparent 34%),
+    radial-gradient(circle at 88% 82%, rgba(34, 203, 157, 0.22), transparent 30%),
+    linear-gradient(130deg, rgba(30, 72, 163, 0.16), rgba(7, 24, 66, 0.76));
+  position: relative;
+}
+
+.media-9::after,
+.media-10::after {
+  content: 'Under Progress';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  color: rgba(196, 225, 255, 0.8);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 /* WIP badge on project title */
 .wip-badge {
   display: inline-block;
@@ -827,6 +880,22 @@ body.cursor-project .cursor-ring {
 .project-showcase:hover .project-info .project-tags span {
   background: #eef4ff;
   border-color: #9ab4e8;
+}
+
+.project-loom-link {
+  display: inline-flex;
+  margin-top: 0.55rem;
+  margin-bottom: 0.35rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #2d57a1;
+  text-decoration: none;
+}
+
+.project-loom-link:hover {
+  color: var(--cyan);
 }
 
 /* ── Project description overlay ───────────────────── */
@@ -907,6 +976,33 @@ body.cursor-project .cursor-ring {
   overflow: hidden;
   width: 100%;
   margin-top: 2rem;
+}
+
+.skills-categories {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 1.4rem;
+}
+
+.skills-card {
+  padding: 1rem 1.1rem;
+}
+
+.skills-card h3 {
+  margin: 0;
+  font-size: 0.92rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #1b3261;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.skills-card p {
+  margin: 0.45rem 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.65;
 }
 
 /* No gap on the track — spacing is handled entirely by group padding
@@ -1199,6 +1295,18 @@ button {
   .projects-grid {
     grid-template-columns: 1fr;
     gap: 2.4rem;
+  }
+
+  .project-category + .project-category {
+    margin-top: 2.1rem;
+  }
+
+  .project-category-head p {
+    max-width: 100%;
+  }
+
+  .skills-categories {
+    grid-template-columns: 1fr;
   }
 
   .project-media {
