@@ -811,29 +811,30 @@ body.cursor-project .cursor-ring {
   text-transform: uppercase;
 }
 
-.media-9,
-.media-10 {
+.media-9 {
   background-color: #0c1938;
-  background-image:
-    radial-gradient(circle at 14% 18%, rgba(63, 138, 255, 0.28), transparent 34%),
-    radial-gradient(circle at 88% 82%, rgba(34, 203, 157, 0.22), transparent 30%),
-    linear-gradient(130deg, rgba(30, 72, 163, 0.16), rgba(7, 24, 66, 0.76));
-  position: relative;
+  background-image: url("images/project-leadgen.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.media-9::after,
+.media-9::after {
+  content: none !important;
+  display: none !important;
+}
+
+.media-10 {
+  background-color: #0c1938;
+  background-image: url("images/project-appointment.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .media-10::after {
-  content: 'Under Progress';
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.82rem;
-  color: rgba(196, 225, 255, 0.8);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  content: none !important;
+  display: none !important;
 }
 
 /* WIP badge on project title */
