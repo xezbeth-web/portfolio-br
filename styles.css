@@ -618,6 +618,13 @@ body.cursor-project .cursor-ring {
   padding: 1rem 1.1rem;
 }
 
+.experience-divider {
+  height: 1px;
+  width: 100%;
+  margin: 0.2rem 0 0.45rem;
+  background: linear-gradient(90deg, rgba(47, 120, 255, 0.08), rgba(47, 120, 255, 0.55), rgba(47, 120, 255, 0.08));
+}
+
 .timeline h3 {
   margin: 0 0 0.5rem;
   font-size: 1.05rem;
