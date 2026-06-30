@@ -844,6 +844,20 @@ body.cursor-project .cursor-ring {
   display: none !important;
 }
 
+.media-11 {
+  position: relative;
+  background-color: #0c1938;
+  background-image: url("images/project-chatbot.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.media-11::after {
+  content: none !important;
+  display: none !important;
+}
+
 /* WIP badge on project title */
 .wip-badge {
   display: inline-block;
